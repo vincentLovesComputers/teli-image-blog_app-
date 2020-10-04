@@ -2,12 +2,13 @@
 
 Teli is a blog app to capture and share moments using visual imagery.
 
-##### Video on YouTube [Youtube/Teli](https://youtu.be/b8s7aA7xXj8)
+##### Video on YouTube [youtube/Teli](https://youtu.be/b8s7aA7xXj8)
+Register                                                                        |  Setup Profile
+:------------------------------------------------------------------------------:|:-------------------------------------------------------------------------------:
+<img src="app/src/main/res/images/Screenshot_20201003-165111.jpg" height = 400> |  <img src="app/src/main/res/images/Screenshot_20201003-170125.jpg" height = 400>
 
-<img src="app/src/main/res/images/Screenshot_20201003-165111.jpg" height = 400>
-<img src="app/src/main/res/images/Screenshot_20201003-170125.jpg" height = 400>
-<img src="app/src/main/res/images/Screenshot_20201003-165035.jpg" height = 400>
-<img src="app/src/main/res/images/Screenshot_20201003-165043.jpg" height = 400>
+:------------------------------------------------------------------------------:|:-------------------------------------------------------------------------------:
+<img src="app/src/main/res/images/Screenshot_20201003-165035.jpg" height = 400> | <img src="app/src/main/res/images/Screenshot_20201003-165043.jpg" height = 400>
 
 
 ## Download apk, follow link:
