@@ -1,0 +1,59 @@
+<resources>
+    <string name="app_name">teli</string>
+    <string name="settings">Settings</string>
+    <string name="logout">Logout</string>
+    <string name="email_hint">Email</string>
+    <string name="password_hint">Password</string>
+    <string name="logo">Blogger</string>
+    <string name="logo_name">bloga</string>
+    <string name="login_btn">Login</string>
+    <string name="login_reg_btn_text">Register</string>
+    <string name="reg_login_btn">Login</string>
+    <string name="reg_btn_txt">Register</string>
+    <string name="confirm_password_hint">Confirm password</string>
+    <string name="empty_fields">Fill in all fields"</string>
+    <string name="pwd_unmatch">Passwords do not match</string>
+    <string name="reg_success">Registration successful</string>
+    <string name="login_success">Logged In</string>
+    <string name="name_hint">Name</string>
+    <string name="setup_title">Profile settings</string>
+
+    <string name="post_title">Post</string>
+    <string name="post_img_desc">Post Image</string>
+    <string name="post_desc_hint">Description</string>
+    <string name="post_submit_btn">Post</string>
+    <string name="bottom_nav_home">Home</string>
+    <string name="btm_nav_notifications">Notifications</string>
+    <string name="btn_nav_person">Person</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="post_topic_hint">Topic</string>
+    <string name="post_add_img_title">Add Image</string>
+    <string name="submit_post_title">Submit</string>
+    <string name="explore_blog_text">explore blog...</string>
+    <string name="main_add_new_post">Add Post</string>
+    <string name="cancel_explore_btn">Cancel</string>
+    <string name="setup_name_hint">Username</string>
+
+    <string name="likes_text">likes</string>
+
+    <string name="notification_info">liked your blog</string>
+
+    <string name="category">Choose Category</string>
+    <string name="main_intro_img_desc">Intro Image</string>
+    <string name="reg_email">Email</string>
+    <string name="reg_pwd">Password</string>
+    <string name="reg_conf_pwd">Confirm Password</string>
+    <string name="reg_intro_id">Create an account</string>
+    <string name="reg_btn">Sign Up</string>
+    <string name="reg_sigin_btn">Sign In</string>
+    <string name="ic_camera_title">Camera</string>
+    <string name="login_intro">Login</string>
+    <string name="setup_bio">Enter your bio</string>
+    <string name="edit_btn">Edit</string>
+    <string name="splash_screen_logo">logo</string>
+    <string name="splash_screen_background">background</string>
+    <string name="register_logo_image">logo</string>
+    <string name="login_logo">logo</string>
+    <string name="main_logo">logo</string>
+</resources>

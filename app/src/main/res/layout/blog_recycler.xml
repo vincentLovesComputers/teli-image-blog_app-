@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/blog_recycler"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/lightPurple"
+    android:outlineAmbientShadowColor="#000000"
+    android:outlineSpotShadowColor="#000000">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/blog_card"
+        android:backgroundTint="@color/textColor"
+        app:shapeAppearance="@style/blogCardView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:elevation="2dp"
+            android:paddingBottom="10dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/user_profile_img"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/user_avatarplaceholder"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:textColor="#D3000000"
+                android:id="@+id/blog_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/user_profile_img"
+                app:layout_constraintTop_toTopOf="@+id/user_profile_img" />
+
+            <TextView
+                android:id="@+id/blog_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:textColor="#7C000000"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="@+id/user_profile_img"
+                app:layout_constraintStart_toEndOf="@+id/user_profile_img"
+                app:layout_constraintTop_toBottomOf="@+id/blog_username" />
+
+
+            <ImageView
+                android:id="@+id/blog_image"
+                android:layout_width="0dp"
+                android:layout_height="220dp"
+                android:layout_marginTop="56dp"
+                android:scaleType="centerCrop"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/user_profile_img"
+                app:srcCompat="@drawable/blog_placeholder" />
+
+<!--            <TextView-->
+<!--                android:id="@+id/blog_desc"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:maxHeight="100dp"-->
+<!--                android:layout_margin="10dp"-->
+<!--                android:textSize="18sp"-->
+<!--                android:padding="5dp"-->
+<!--                android:layout_marginTop="76dp"-->
+<!--                android:textColor="#000000"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintBottom_toTopOf="@id/explore_blog"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/blog_image" />-->
+
+            <ImageView
+                android:id="@+id/favorite"
+                android:layout_width="36dp"
+                android:layout_height="32dp"
+                android:layout_margin="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/unlike_fav_icon" />
+
+            <TextView
+                android:id="@+id/likes_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:textColor="@color/midGray"
+                app:layout_constraintBottom_toBottomOf="@+id/favorite"
+                app:layout_constraintEnd_toStartOf="@+id/favorite" />
+
+            <TextView
+                android:id="@+id/blog_topic"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:gravity="start"
+                android:textColor="#000000"
+                android:padding="5dp"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/blog_image"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/user_profile_img" />
+
+
+<!--                <com.google.android.material.button.MaterialButton-->
+<!--                    android:id="@+id/explore_blog"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:textSize="16sp"-->
+<!--                    app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                    app:layout_constraintEnd_toEndOf="parent"-->
+<!--                    app:layout_constraintStart_toStartOf="parent"-->
+<!--                    app:layout_constraintTop_toBottomOf="@+id/blog_desc"-->
+<!--                    android:text="@string/explore_blog_text"-->
+<!--                    style="?attr/borderlessButtonStyle"-->
+<!--                            />-->
+
+            <TextView
+                android:id="@+id/blog_category"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="#000"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/likes_view"
+                app:layout_constraintStart_toEndOf="@+id/blog_username"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

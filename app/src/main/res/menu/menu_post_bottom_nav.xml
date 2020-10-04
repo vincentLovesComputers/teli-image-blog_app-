@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/submit_post_btn"
+        android:icon="@drawable/check_icon"
+        android:title="@string/submit_post_title"
+        android:visible="true" />
+</menu>

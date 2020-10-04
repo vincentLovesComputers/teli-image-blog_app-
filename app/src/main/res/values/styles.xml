@@ -1,0 +1,168 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+    </style>
+
+    <style name="ProgressBarTheme" parent="ThemeOverlay.AppCompat">
+        <item name="colorAccent">@color/orange1</item>
+        <item name="backgroundTint">@color/white</item>
+    </style>
+
+    <style name="AppTextField" parent="Widget.MaterialComponents.TextInputLayout.FilledBox.Dense">
+        <item name="boxBackgroundColor">#D3D3D3</item>
+    </style>
+
+    <style name="SetupTextField" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxCornerRadiusBottomStart">10dp</item>
+        <item name="hintTextColor">@color/orange1</item>
+        <item name="boxCornerRadiusBottomEnd">10dp</item>
+        <item name="boxCornerRadiusTopStart">10dp</item>
+        <item name="boxCornerRadiusTopEnd">10dp</item>
+        <item name="boxStrokeColor">@color/orange1</item>
+        <item name="boxStrokeWidth">3dp</item>
+        <item name="android:textColorHint">@color/white2</item>
+    </style>
+
+    <style name="blogCardView" parent="ShapeAppearance.MaterialComponents.MediumComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">20dp</item>
+        <item name="elevation">1dp</item>
+
+    </style>
+
+    <style name="dropdownStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+        <item name="borderWidth">2dp</item>
+        <item name="boxStrokeColor">@color/colorPrimaryDark</item>
+        <item name="android:textColor">#000000</item>
+        <item name="itemTextColor">#000000</item>
+        <item name="android:hint">@string/category</item>
+        <item name="android:textColorHint">@color/colorPrimaryDark</item>
+        <item name="endIconTint">@color/colorPrimaryDark</item>
+        <item name="endIconMode">dropdown_menu</item>
+    </style>
+
+    <style name="notificationTheme" parent="Widget.MaterialComponents.CardView">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopRight">25dp</item>
+        <item name="cornerSizeTopLeft">25dp</item>
+        <item name="cornerSizeBottomRight">25dp</item>
+        <item name="cornerSizeBottomLeft">25dp</item>
+        <item name="contentPadding">0dp</item>
+    </style>
+
+    <style name="topicStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+        <item name="borderWidth">2dp</item>
+        <item name="boxStrokeColor">@color/colorPrimaryDark</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:hint">@string/post_topic_hint</item>
+
+        <item name="android:textColorHint">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="descriptionStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+        <item name="borderWidth">2dp</item>
+        <item name="boxStrokeColor">@color/colorPrimaryDark</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:hint">@string/post_desc_hint</item>
+        <item name="android:textColorHint">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="regLogIntTextField" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+        <item name="cornerFamily">rounded</item>
+        <item name="boxStrokeWidth">1dp</item>
+        <item name="cornerRadius">15dp</item>
+        <item name="boxStrokeColor">@color/orange1</item>
+        <item name="boxBackgroundMode">outline</item>
+        <item name="backgroundTint">#fff</item>
+
+
+    </style>
+
+
+    <style name="regCustomShapeBtn">
+        <item name="cornerSizeTopLeft">5dp</item>
+        <item name="cornerSizeTopRight">25dp</item>
+        <item name="cornerSizeBottomRight">25dp</item>
+        <item name="cornerSizeBottomLeft">5dp</item>
+    </style>
+    <style name="regSignInCustomShapeBtn">
+        <item name="cornerSizeTopLeft">20dp</item>
+        <item name="cornerSizeTopRight">20dp</item>
+        <item name="cornerSizeBottomRight">20dp</item>
+        <item name="cornerSizeBottomLeft">20dp</item>
+    </style>
+
+    <style name="regCard" parent="Widget.MaterialComponents.CardView">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopRight">20dp</item>
+        <item name="cornerSizeTopLeft">20dp</item>
+        <item name="cornerSizeBottomRight">20dp</item>
+        <item name="cornerSizeBottomLeft">20dp</item>
+        <item name="contentPadding">0dp</item>
+
+    </style>
+
+    <style name="exploreUserCard" parent="Widget.MaterialComponents.CardView">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopRight">25dp</item>
+        <item name="cornerSizeTopLeft">25dp</item>
+        <item name="cornerSizeBottomRight">25dp</item>
+        <item name="cornerSizeBottomLeft">25dp</item>
+        <item name="contentPadding">0dp</item>
+
+    </style>
+
+    <style name="interestsCard" parent="@style/Widget.MaterialComponents.CardView">
+        <item name="shapeAppearanceOverlay">@style/interestCardShape</item>
+    </style>
+
+    <style name="interestCardShape" parent="ShapeAppearanceOverlay.MaterialCardView.Cut">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopRight">25dp</item>
+        <item name="cornerSizeTopLeft">25dp</item>
+        <item name="cornerSizeBottomLeft">25dp</item>
+        <item name="cornerSizeBottomRight">25dp</item>
+    </style>
+
+    <style name="ShapeAppearanceOverlay.MaterialCardView.Cut" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopRight">25dp</item>
+        <item name="cornerSizeTopLeft">25dp</item>
+    </style>
+
+    <style name="profCard" parent="@style/Widget.MaterialComponents.CardView">
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearanceOverlay.MaterialCardView.Cut</item>
+    </style>
+
+    <style name="CustomTabLayout" parent="Widget.Design.TabLayout">
+        <item name="tabIndicatorColor">@color/orange1</item>
+        <item name="tabTextAppearance">@style/MyCustomTextAppearance</item>
+        <item name="tabBackground">@drawable/tab_layout_selector</item>
+    </style>
+
+    <style name="MyCustomTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="textAllCaps">false</item>
+    </style>
+
+    <style name="circleImageViewStyle" >
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopRight">20dp</item>
+        <item name="cornerSizeTopLeft">20dp</item>
+        <item name="cornerSizeBottomRight">20dp</item>
+        <item name="cornerSizeBottomLeft">20dp</item>
+    </style>
+
+    <style name="interestsImageViewStyle" >
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeBottomRight">20dp</item>
+        <item name="cornerSizeBottomLeft">20dp</item>
+
+    </style>
+
+
+</resources>

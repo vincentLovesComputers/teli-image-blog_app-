@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".ui.Setup">
+
+        <TextView
+            android:id="@+id/profile_intro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Profile Setup"
+            android:layout_marginTop="10dp"
+            app:layout_constraintTop_toBottomOf="@id/setup_progress_bar"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:gravity="center"
+            />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_pic"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="20dp"
+            app:civ_border_color="#FFFFFF"
+            app:civ_border_width="2dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/profile_intro"
+            android:src="@drawable/profile_icon" />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/setup_prof_name_layout"
+            style="@style/SetupTextField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="12dp"
+            app:errorEnabled="true"
+            android:hint="@string/setup_name_hint"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/profile_pic">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/setup_prof_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                android:inputType="text"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/setup_prof_bio_layout"
+        style="@style/SetupTextField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="12dp"
+        app:errorEnabled="true"
+        android:hint="@string/setup_bio"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/setup_prof_name_layout">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/setup_prof_bio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+        <Button
+            android:id="@+id/setup_save_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:text="Save"
+            android:backgroundTint="@color/orange1"
+            android:textColor="@color/white2"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/setup_recycler" />
+
+
+        <TextView
+            android:id="@+id/setup_interests"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/setup_prof_bio_layout"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp"
+            android:text="Interests :"
+            android:textColor="#fff"
+            android:layout_marginStart="13dp"
+            />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/setup_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginHorizontal="13dp"
+            app:layout_constraintLeft_toLeftOf="@id/setup_interests"
+            app:layout_constraintTop_toBottomOf="@id/setup_interests"
+            app:layout_constraintVertical_bias="0.175" />
+
+        <ProgressBar
+            android:id="@+id/setup_progress_bar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:indeterminate="true"
+            android:visibility="invisible"
+            android:theme="@style/ProgressBarTheme"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
+
+

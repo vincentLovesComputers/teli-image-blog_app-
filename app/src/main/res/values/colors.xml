@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#490D9F</color>
+    <color name="colorPrimaryDark">#CC9D4BFB</color>
+    <color name="lightPurple">#D3ADFF</color>
+    <color name="colorAccent">#000000</color>
+    <color name="textColor">#FFFFFF</color>
+    <color name="password_hint_color">#ECE2E2</color>
+    <color name="error_background">#FF0000</color>
+    <color name="success">#2FFF00</color>
+    <color name="saveBtnEnabled">#F44336</color>
+    <color name="orange2">#E6F89E9E</color>
+    <color name="midGray">#747474</color>
+    <color name="unliked_fav">#747474</color>
+    <color name="liked_fav">#FF0000</color>
+    <color name="activeCard">#03A9F4</color>
+    <color name="white">#F4F4F4</color>
+    <color name="mtrl_textinput_default_box_stroke_color">#fff</color>
+    <color name="orange1">#F44336</color>
+    <color name="grey3">#ECE2E2</color>
+    <color name="white2">#fff</color>
+    <color name="red1">#FF0000</color>
+    <color name="transparent">#80000000</color>
+    <color name="background1">#F8D6FD</color>
+</resources>

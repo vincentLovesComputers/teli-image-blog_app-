@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white2"
+    tools:context=".ui.authentication.Login">
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/photo_background"
+        android:scaleType="centerCrop"
+        />
+
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="145dp"
+        android:layout_marginTop="10dp"
+        android:contentDescription="@string/login_logo"
+        android:elevation="20dp"
+        android:src="@drawable/home_logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/login_card"
+        style="@style/regCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="20dp"
+        android:paddingBottom="10dp"
+        android:elevation="10dp"
+        android:theme="@style/regCard"
+        app:cardBackgroundColor="@color/colorPrimaryDark"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/reg_intro_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/login_intro"
+                android:textColor="@color/white"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/login_email_layout"
+                android:layout_width="match_parent"
+                style="@style/regLogIntTextField"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="15dp"
+                android:hint="@string/reg_email"
+                app:errorEnabled="true"
+                android:textColorHint="@color/white"
+                app:hintTextColor="@color/orange1"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/reg_intro_id">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/login_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:textSize="18sp"
+
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/login_pwd_layout"
+                style="@style/regLogIntTextField"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:hint="@string/reg_pwd"
+                android:textColorHint="@color/white"
+                app:errorEnabled="true"
+                app:hintTextColor="@color/orange1"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/login_email_layout">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/login_pwd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:textSize="18sp"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <LinearLayout
+                android:id="@+id/button_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@id/login_pwd_layout"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:gravity="center_horizontal"
+                android:weightSum="2"
+                android:layout_marginBottom="20dp"
+
+                >
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/signIn_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/orange1"
+                    android:elevation="10dp"
+                    android:text="@string/reg_sigin_btn"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+
+                    app:shapeAppearance="@style/regSignInCustomShapeBtn" />
+
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/signUp_signIn_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="20dp"
+                android:textSize="18sp"
+                android:text="@string/reg_btn"
+                android:elevation="10dp"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:layout_marginBottom="20dp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/button_layout"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+<!--    <EditText-->
+<!--        android:id="@+id/login_password"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginLeft="50dp"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:layout_marginRight="50dp"-->
+<!--        android:backgroundTint="#FFFFFF"-->
+<!--        android:ems="10"-->
+<!--        android:foregroundTint="#FFFFFF"-->
+<!--        android:hint="@string/password_hint"-->
+<!--        android:inputType="textPassword"-->
+<!--        android:textColor="#FFFFFF"-->
+<!--        android:textColorHighlight="#FFFFFF"-->
+<!--        android:textColorHint="#FFFFFF"-->
+<!--        android:textSize="18sp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.497"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/login_email" />-->
+
+<!--    <EditText-->
+<!--        android:id="@+id/login_email"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginLeft="50dp"-->
+<!--        android:layout_marginTop="80dp"-->
+<!--        android:layout_marginRight="50dp"-->
+<!--        android:backgroundTint="#FFFFFF"-->
+<!--        android:ems="10"-->
+<!--        android:foregroundTint="#FFFFFF"-->
+<!--        android:hint="@string/email_hint"-->
+<!--        android:inputType="textEmailAddress"-->
+<!--        android:textColor="#FFFFFF"-->
+<!--        android:textColorHint="#FFFFFF"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.494"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/logo" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/login_button"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginLeft="50dp"-->
+<!--        android:layout_marginTop="24dp"-->
+<!--        android:layout_marginRight="50dp"-->
+<!--        android:backgroundTint="#00BCD4"-->
+<!--        android:text="@string/login_btn"-->
+<!--        android:textColor="#FFFFFF"-->
+<!--        android:textSize="18sp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.501"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/login_password" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/login_reg_button"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginLeft="50dp"-->
+<!--        android:layout_marginRight="50dp"-->
+<!--        android:layout_marginBottom="72dp"-->
+<!--        android:backgroundTint="#B3ABAB"-->
+<!--        android:text="@string/login_reg_btn_text"-->
+<!--        android:textColor="#F44336"-->
+<!--        android:textSize="18sp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.495"-->
+<!--        app:layout_constraintStart_toStartOf="parent" />-->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

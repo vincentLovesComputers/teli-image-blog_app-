@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ui.authentication.Register">
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/photo_background"
+        android:scaleType="centerCrop"
+        />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="145dp"
+        android:layout_marginTop="10dp"
+        android:contentDescription="@string/register_logo_image"
+        android:src="@drawable/home_logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <!--    <EditText-->
+    <!--        android:id="@+id/reg_email"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginLeft="50dp"-->
+    <!--        android:layout_marginTop="20dp"-->
+    <!--        android:layout_marginRight="50dp"-->
+    <!--        android:backgroundTint="#FFFFFF"-->
+    <!--        android:ems="10"-->
+    <!--        android:foregroundTint="#FFFFFF"-->
+    <!--        android:hint="@string/email_hint"-->
+    <!--        android:inputType="textEmailAddress"-->
+    <!--        android:textColor="#FFFFFF"-->
+    <!--        android:textColorHint="#FFFFFF"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.363"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/logo" />-->
+
+    <!--    <EditText-->
+    <!--        android:id="@+id/reg_password"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginLeft="50dp"-->
+    <!--        android:layout_marginTop="20dp"-->
+    <!--        android:layout_marginRight="50dp"-->
+    <!--        android:backgroundTint="#FFFFFF"-->
+    <!--        android:ems="10"-->
+    <!--        android:foregroundTint="#FFFFFF"-->
+    <!--        android:hint="@string/password_hint"-->
+    <!--        android:inputType="textPassword"-->
+    <!--        android:textColor="#FFFFFF"-->
+    <!--        android:textColorHighlight="#FFFFFF"-->
+    <!--        android:textColorHint="#FFFFFF"-->
+    <!--        android:textSize="18sp"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/reg_email" />-->
+
+    <!--    <EditText-->
+    <!--        android:id="@+id/reg_confirm_password"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginLeft="50dp"-->
+    <!--        android:layout_marginTop="20dp"-->
+    <!--        android:layout_marginRight="50dp"-->
+    <!--        android:backgroundTint="#FFFFFF"-->
+    <!--        android:ems="10"-->
+    <!--        android:foregroundTint="#FFFFFF"-->
+    <!--        android:hint="@string/confirm_password_hint"-->
+    <!--        android:inputType="textPassword"-->
+    <!--        android:textColor="#FFFFFF"-->
+    <!--        android:textColorHighlight="#FFFFFF"-->
+    <!--        android:textColorHint="#FFFFFF"-->
+    <!--        android:textSize="18sp"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/reg_password" />-->
+
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/reg_card"
+            style="@style/regCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="20dp"
+            android:paddingBottom="10dp"
+            android:elevation="10dp"
+            android:theme="@style/regCard"
+            app:cardBackgroundColor="@color/colorPrimaryDark"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/logo">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <TextView
+                    android:id="@+id/reg_intro_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    android:textSize="26sp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginHorizontal="10dp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:text="@string/reg_intro_id" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/reg_email_layout"
+                    android:layout_width="match_parent"
+                    style="@style/regLogIntTextField"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginTop="15dp"
+                    android:hint="@string/reg_email"
+                    app:errorEnabled="true"
+                    android:textColorHint="@color/white"
+                    app:hintTextColor="@color/orange1"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/reg_intro_id">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/reg_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="text"
+                        android:textSize="18sp"
+
+                        />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/reg_pwd_layout"
+                    style="@style/regLogIntTextField"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:hint="@string/reg_pwd"
+                    android:textColorHint="@color/white"
+                    app:errorEnabled="true"
+                    app:hintTextColor="@color/orange1"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/reg_email_layout">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/reg_pwd"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPassword"
+                        android:textSize="18sp"
+                        />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/reg_conf_pwd_layout"
+                    style="@style/regLogIntTextField"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:hint="@string/reg_conf_pwd"
+                    android:textColorHint="@color/white"
+                    app:errorEnabled="true"
+                    app:hintTextColor="@color/orange1"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/reg_pwd_layout">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/reg_conf_pwd"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPassword"
+                        android:textSize="18sp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal"
+                  app:layout_constraintTop_toBottomOf="@id/reg_conf_pwd_layout"
+                  app:layout_constraintLeft_toLeftOf="parent"
+                  app:layout_constraintRight_toRightOf="parent"
+                  android:gravity="center_horizontal"
+                  android:weightSum="2"
+                  android:layout_marginBottom="20dp"
+
+                  >
+
+                  <com.google.android.material.button.MaterialButton
+                      android:id="@+id/signIn_signUp_btn"
+                      android:layout_width="wrap_content"
+                      android:layout_height="80dp"
+                      android:layout_marginLeft="10dp"
+                      android:layout_marginTop="20dp"
+                      android:layout_marginRight="5dp"
+                      android:layout_weight="1"
+                      android:backgroundTint="#C3B5B5"
+                      android:elevation="10dp"
+                      android:text="@string/reg_sigin_btn"
+                      android:textAllCaps="false"
+                      android:textColor="@color/white"
+                      android:textSize="18sp"
+
+                      app:shapeAppearance="@style/regSignInCustomShapeBtn" />
+                  <com.google.android.material.button.MaterialButton
+                      android:id="@+id/signUp_btn"
+                      android:layout_width="wrap_content"
+                      android:layout_height="80dp"
+                      android:layout_weight="1"
+                      android:layout_marginTop="20dp"
+                      android:layout_marginRight="10dp"
+                      android:textSize="18sp"
+                      android:backgroundTint="@color/orange1"
+                      android:text="@string/reg_btn"
+                      android:elevation="10dp"
+                      android:textColor="@color/white"
+                      android:layout_marginLeft="5dp"
+                      android:textAllCaps="false"
+                      app:shapeAppearance="@style/regCustomShapeBtn"
+                      />
+
+
+              </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+    <!--    <Button-->
+    <!--        android:id="@+id/reg_button"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginLeft="50dp"-->
+    <!--        android:layout_marginTop="24dp"-->
+    <!--        android:layout_marginRight="50dp"-->
+    <!--        android:backgroundTint="#00BCD4"-->
+    <!--        android:text="@string/reg_btn_txt"-->
+    <!--        android:textColor="#FFFFFF"-->
+    <!--        android:textSize="18sp"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.501"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/reg_confirm_password" />-->
+
+    <!--    <Button-->
+    <!--        android:id="@+id/reg_login_button"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginLeft="50dp"-->
+    <!--        android:layout_marginRight="50dp"-->
+    <!--        android:layout_marginBottom="72dp"-->
+    <!--        android:backgroundTint="#B3ABAB"-->
+    <!--        android:text="@string/reg_login_btn"-->
+    <!--        android:textColor="#F44336"-->
+    <!--        android:textSize="18sp"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.495"-->
+    <!--        app:layout_constraintStart_toStartOf="parent" />-->
+
+    <!--    <ProgressBar-->
+    <!--        android:id="@+id/progress_bar"-->
+    <!--        style="?android:attr/progressBarStyle"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginTop="16dp"-->
+    <!--        android:foregroundTint="#F44336"-->
+    <!--        android:progressTint="#F44336"-->
+    <!--        android:scrollbarSize="10dp"-->
+    <!--        android:visibility="invisible"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.498"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
